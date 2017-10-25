@@ -32,10 +32,14 @@ def won?(board)
   false
 end
 
+#def full?(board)
+#  board.none? do |i|
+#    i == " " || i.nil?
+#  end
+#end
+
 def full?(board)
-  board.none? do |i|
-    i == " " || i.nil?
-  end
+  board.all? { |occupied| occupied != " "  }
 end
 
 def draw?(board)
