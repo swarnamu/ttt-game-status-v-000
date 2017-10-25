@@ -22,3 +22,9 @@ def won?(board)
     position_taken(board, win_combination[1])
   end
 end
+
+def full?(board)
+  board.none? do |i|
+    i == " " || i.nil?
+  end
+end
