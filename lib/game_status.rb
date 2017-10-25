@@ -11,4 +11,4 @@ win_combination = [[0,1,2] # top row
                    [1,4,7] # middle column
                    [2,5,8] # right column
                    [0,4,8] # left start diagonaly
-                   [2,4,6] # right start diagonaly]
+                   [2,4,6]] # right start diagonaly]
