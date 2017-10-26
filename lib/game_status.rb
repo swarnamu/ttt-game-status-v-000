@@ -54,22 +54,12 @@ def over?(board)
    draw?(board) || full?(board) || won?(board)
 end
 
-#def winner(board)
-#  if won?(board) != nil
-#    winner = board[won?(board)[0]]
-#  else
-#    draw(board)
-#  end
-
-#end
-
 def winner(board)
-  winning_board = won?(board)
-  if winning_board == nil
-    return nil
-  elsif board[winning_board[0]].include("X")
-    return "X"
+  if won?(board) != nil
+    winner = board[won?(board)[0]]
   else
-    return "O"
+    nil
   end
 end
+
+
