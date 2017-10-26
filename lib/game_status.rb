@@ -70,6 +70,6 @@ def winner(board)
   elsif board[winning_board[0]].include("X")
     return "X"
   else
-    return "O"  
+    return "O"
   end
 end
