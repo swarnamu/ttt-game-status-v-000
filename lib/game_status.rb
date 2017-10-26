@@ -56,9 +56,9 @@ end
 
 def winner(board)
   if !won(board)
-    return nil 
+    return nil
   else  won?(board) != nil
     winner = board[won?(board)[0]]
-  
+
   end
 end
